@@ -1,1 +1,19 @@
-./now.staging.json
+{
+  "version": 2,
+  "name": "next-typescript-api-zeit-boilerplate",
+  "scope": "team_qnVfSEVc2WwmOE1OYhZr4VST",
+  "env": {},
+  "build": {
+    "env": {
+      "APP_STAGE": "production",
+      "SENTRY_DSN": "@ntazb-sentry-dsn"
+    }
+  },
+  "routes": [
+    {
+      "src": "/robots.txt",
+      "dest": "/robots/production.txt"
+    }
+  ],
+  "public": false
+}
